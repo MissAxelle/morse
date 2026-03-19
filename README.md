@@ -117,8 +117,9 @@ morse/
 │  ├─ Button.hpp
 │  ├─ MorseDecoder.cpp
 │  └─ MorseDecoder.hpp
-├─ assets/                # font files (not included)
+├─ assets/                # font files & app icon
 ├─ build/                 # built executable & copied assets (ignored)
+├─ bundle/                # built .app                       (ignored)
 ├─ Makefile
 ├─ QUICKSTART.md
 ├─ DEVELOPMENT.md
