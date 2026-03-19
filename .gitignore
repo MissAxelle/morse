@@ -1,0 +1,28 @@
+# Build artifacts
+/build/
+/morse_decoder
+/bundle/
+
+# Object files and compiled binaries
+*.o
+*.obj
+*.exe
+*.out
+
+# macOS
+.DS_Store
+
+# Editor directories
+.vscode/
+*.swp
+*~
+
+# CMake cache (if someone uses cmake)
+/CMakeFiles/
+CMakeCache.txt
+
+# Temporary files
+.idea/
+
+# Ensure fonts/assets are tracked unless user chooses to add them
+# (do NOT ignore assets/ by default)
