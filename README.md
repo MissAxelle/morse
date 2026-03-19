@@ -15,7 +15,7 @@ A compact desktop application written in C++ (C++17) using SFML 3.x that lets yo
 **Quick Links**
 
 - Build: `make`
-- Run: `./morse_decoder` (from the project root or `build/` folder)
+- Run: `./build/morse_decoder`
 
 ---
 
@@ -111,23 +111,41 @@ Example: To type `A` (.-)
 
 ```
 morse/
+│
+├─ assets/
+│  │
+│  ├─ SpecialElite-Regular.ttf      # retro typewriter font
+│  └─ icon.icns                     # app icon
+│
 ├─ src/
-│  ├─ main.cpp
-│  ├─ Button.cpp
-│  ├─ Button.hpp
-│  ├─ MorseDecoder.cpp
-│  └─ MorseDecoder.hpp
-├─ assets/                # font files & app icon
-├─ build/                 # built executable & copied assets (ignored)
-├─ bundle/                # built .app                       (ignored)
-├─ Makefile
-├─ LICENSE                # MIT license
-└─ README.md              # this file
+│  │
+│  ├─ main.cpp                      # main loop
+│  ├─ Button.cpp                    # button logic
+│  ├─ Button.hpp                    # button header
+│  ├─ MorseDecoder.cpp              # morse dictionnary
+│  └─ MorseDecoder.hpp              # morse dictionnary header
+│
+├─ .gitignore                       # prevent builds from being commited
+├─ build/                           # built executable & copied assets       (ignored)
+├─ bundle/                          # built .app                             (ignored)
+├─ LICENSE                          # MIT license
+├─ Makefile                         # used to compile
+└─ README.md                        # this file
 ```
 
 ## Assets
 
-Place your font (example: `SpecialElite-Regular.ttf`) in the `assets/` folder. See [assets/README.md](assets/README.md) for details. The program attempts several relative paths at runtime so you can run it from either the project root or `build/`.
+All visual resources used by the application are stored in the `assets/` folder.
+
+You can easily customize the appearance of the application by replacing:
+- the **font** file
+- the **application icon**
+
+Simply drop your new files into the `assets/` folder. If you change the file names, make sure to update:
+- the font file name in `main.cpp`
+- the icon file name in the `Makefile`
+
+This ensures the build system and the application can correctly locate and load the new assets.
 
 ## Development Notes
 
