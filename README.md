@@ -66,7 +66,7 @@ From the project root:
 
 ```bash
 make
-./morse_decoder
+./build/morse_decoder
 ```
 
 Common `make` targets:
