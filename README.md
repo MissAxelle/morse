@@ -121,9 +121,7 @@ morse/
 ├─ build/                 # built executable & copied assets (ignored)
 ├─ bundle/                # built .app                       (ignored)
 ├─ Makefile
-├─ QUICKSTART.md
-├─ DEVELOPMENT.md
-├─ BUILD_SUMMARY.md
+├─ LICENSE                # MIT license
 └─ README.md              # this file
 ```
 
